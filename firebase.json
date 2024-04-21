@@ -1,0 +1,31 @@
+{
+    "hosting": {
+      "public": "build/web",
+      "site": "thetumorscan",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ]
+        }
+      ]
+    },
+    "flutter": {
+      "platforms": {
+        "dart": {
+          "lib/firebase_options.dart": {
+            "projectId": "tumorscan-6d12f",
+            "configurations": {
+              "web": "1:155312122959:web:612066ca2d063274edce3a"
+            }
+          }
+        }
+      }
+    }
+  }
+  
